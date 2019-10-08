@@ -21,7 +21,7 @@ RUN pip install setuptools-rust
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain $RUST_TOOLCHAIN
 ENV PATH=/home/$RUST_USER/.cargo/bin:$PATH
 
-# Installing AWS CLI tool
-RUN pip install awscli
+# Installing AWS CLI tools
+RUN pip install awscli s3pypi
 
 ENTRYPOINT bash
