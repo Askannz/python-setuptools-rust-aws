@@ -4,6 +4,7 @@ ARG RUST_TOOLCHAIN=nightly-2019-09-15
 ARG RUST_USER=docker
 
 RUN apt-get update
+RUN apt-get upgrade -y
 RUN apt-get install -y git git-lfs python3 python3-setuptools python3-wheel python3-pip python3-virtualenv curl
 
 # Switching to local user
