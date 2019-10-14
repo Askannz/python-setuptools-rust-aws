@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:19.04
 
 ARG RUST_TOOLCHAIN=nightly-2019-09-15
 ARG RUST_USER=docker
